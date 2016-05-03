@@ -1,6 +1,5 @@
 # fcalc
-**a basic, fully self-contained one-function calculator,
-released into the public domain.**
+**a basic calculator, fully contained within a single function, released into the public domain.**
 
 ## Features
 - Contained in a single C function
