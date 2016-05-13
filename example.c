@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-double fcalc(char **str, int *err, int _);
+double fcalc(const char **str, int *err, int _);
 
 int main()
 {
 	char line[2048];
-	char *ptr = line;
+	const char *ptr = line;
 	int err;
 	while (1)
 	{

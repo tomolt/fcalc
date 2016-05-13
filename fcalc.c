@@ -1,12 +1,12 @@
 
-/* fcalc - a basic calculator, fully contained within a single function, *\
-\* released into the public domain. written by Thomas Oltmann.           */
-double fcalc(char **str, int *err, int _)
+/* fcalc - a basic, fully self-contained one-function calculator, *\
+\* released into the public domain. written by Thomas Oltmann.    */
+double fcalc(const char **str, int *err, int _)
 {
 	switch (_)
 	{
 		case 0: ; /* Parse full expression */
-			char *str1 = *str;
+			const char *str1 = *str;
 			int err1 = 0;
 			double ret = fcalc(&str1, &err1, 1);
 			while (*str1 != 0)
